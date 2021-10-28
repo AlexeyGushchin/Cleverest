@@ -23,20 +23,20 @@
                     <a href="~/Pages/Rating">Rating</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="~/Pages/TestsList">Choose test</a>
+                    <a href="~/Pages/TestsList">Select a test</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="~/Pages/NewTest">Suggest a test</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="~/Pages/NewComplaint">Send complaint</a>
+                    <a href="~/Pages/NewComplaint">Send a complaint</a>
                 </div>
             }
 
             @if (User.IsInRole(AppRoles.Moderator.ToString()))
             {
                 <div class="col-md-auto">
-                    <a href="~/Pages/TestsForCheck">Tests for check ( @testLogic.GetTestsForCheck().Count() )</a>
+                    <a href="~/Pages/TestsForCheck">Tests to check ( @testLogic.GetTestsForCheck().Count() )</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="~/Pages/NewTest">Add a new test</a>
